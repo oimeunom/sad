@@ -1,0 +1,18 @@
+var NMS = ["Marge", "Bart", "Homer", "Lisa", "Maggie"]; 
+var img = ["marge.jpg", "bart.jpg", "homer.jpg", "lisa.jpg", "maggie.png"];
+var ini = 0;
+
+function oi()
+{
+    ini++;
+    var numerodeparentes = 4
+    if( ini > numerodeparentes)
+    {
+        ini=0;
+    }
+    var adicionarimagem = img[ini];
+    var adicionarnome = img[ini];
+    document.getElementById("fotodoparente").src = adicionarimagem;
+    document.getElementById("nomedoparente").innerHTML = adicionarnome;
+}
+
